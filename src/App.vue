@@ -21,7 +21,7 @@ export default {
     return {
       hello: 'HelloWorld',
       title: 'Vue Movie DB',
-      isTrue: true,
+      // isTrue: true,
       status: 'Ready'
     }
   },
@@ -34,11 +34,11 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #fff;
+  }
 </style>

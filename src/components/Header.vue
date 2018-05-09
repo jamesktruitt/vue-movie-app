@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      name: 'James'
+      name: 'Tru\'s Movie Database'
     }
   },
   computed: {
@@ -31,6 +31,7 @@ export default {
     background-color: #111;
     padding: 20px;
     color: white;
+    margin-bottom: 4em;
   }
   h1 {
     margin: 0;

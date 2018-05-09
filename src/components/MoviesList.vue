@@ -1,8 +1,6 @@
 <template>
   <ul>
     <li v-for='movie in movies'>
-      <!-- <Movie :movie='movie' /> -->
-        {{ movie.title }}
     <Movie :movie='movie'/>
     </li>
   </ul>
@@ -41,5 +39,13 @@ export default {
 </script>
 
 <style scoped>
-
+ul {
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  list-style-type: none;
+  padding: 1rem;
+  Margin: 0;
+}
 </style>
