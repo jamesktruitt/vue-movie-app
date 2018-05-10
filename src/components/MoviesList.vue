@@ -11,6 +11,9 @@ import Movie from './Movie.vue';
 
 export default {
   name: 'MoviesList',
+  components: {
+    Movie
+  },
   data() {
     return {
       movies: []
@@ -31,9 +34,6 @@ export default {
         console.log(e);
       }
     }
-  },
-  components: {
-    Movie
   }
 };
 </script>

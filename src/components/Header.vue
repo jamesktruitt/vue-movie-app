@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{ newTitle }}</h1>
+    <h1><router-link to='/'> {{ title }} </router-link></h1>
   </header>
 </template>
 
@@ -12,28 +12,33 @@ export default {
   },
   data() {
     return {
-      name: 'Tru\'s Movie Database'
+      name: ''
     }
   },
-  computed: {
-    newTitle: function() {
-      if(this.title === 'hello') {
-        return this.title
-      }
-      return this.name
-    }
-  }
 };
 </script>
 
 <style scoped>
-  header {
-    background-color: #111;
-    padding: 20px;
-    color: white;
-    margin-bottom: 4em;
-  }
-  h1 {
-    margin: 0;
-  }
+header {
+  background-color: #111;
+  padding: 40px;
+}
+
+h1 {
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: 0
+}
+
+a:hover   {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+  margin: 0
+}
 </style>

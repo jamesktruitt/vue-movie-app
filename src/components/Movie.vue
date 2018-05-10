@@ -19,10 +19,11 @@ export default {
     }
   }
 };
+
 </script>
 
 <style scoped>
-  img {
-    box-shadow: 0 0 5px black;
-  }
+img {
+  box-shadow: 0 0 60px black;
+}
 </style>
