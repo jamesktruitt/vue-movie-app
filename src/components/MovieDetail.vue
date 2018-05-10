@@ -1,11 +1,13 @@
 <template>
-  <div class='movie-wrapper' :style='styles'>
-    <section class='movie-info'>
-      <h1> {{ movie.title }} </h1>
-      <h3>Release Date: {{ movie.release_date }} </h3>
-      <p> {{ movie.overview }} </p>
-    </section>
-  </div>
+  <transition name='fade'>
+    <div class='movie-wrapper' :style='styles'>
+      <section class='movie-info'>
+        <h1> {{ movie.title }} </h1>
+        <h3>Release Date: {{ movie.release_date }} </h3>
+        <p> {{ movie.overview }} </p>
+      </section>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -22,7 +24,7 @@ export default {
   computed: {
     styles() {
       return {
-        background: `url(${BACKDROP_PATH}/${this.movie.backdrop_path}) no-repeat`
+        background: `url(${BACKDROP_PATH}/${this.movie.backdrop_path}) no-repeat top center / cover`,
       }
     }
   },
@@ -46,14 +48,23 @@ export default {
 
 <style scoped>
 .movie-wrapper {
-  position: relative;
-  padding-top: 50vh;
-  background-size: cover;
+  padding-top: 54vh;
 }
 
 .movie-info {
   background: white;
   color: #222;
   padding: 1rem 10%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(100%); 
 }
 </style>
