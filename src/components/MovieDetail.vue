@@ -24,7 +24,8 @@ export default {
   computed: {
     styles() {
       return {
-        background: `url(${BACKDROP_PATH}/${this.movie.backdrop_path}) no-repeat top center / cover`,
+        background: `url(${BACKDROP_PATH}/${this.movie.backdrop_path}) 
+        no-repeat top center / cover`,
       }
     }
   },

@@ -1,5 +1,6 @@
 <template>
   <ul>
+    <!-- eslint-disable -->
     <li v-for='movie in movies'>
     <Movie :movie='movie'/>
     </li>
@@ -20,6 +21,7 @@ export default {
     };
   },
   created: function() {
+    console.log('created')
     this.fetchData();
   },
   methods: {

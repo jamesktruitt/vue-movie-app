@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+tests/recordings
+tests/screenshots
 
 # local env files
 .env.local
