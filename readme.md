@@ -17,4 +17,4 @@ For this project, you will build a light application that reads data, has end-to
 
 ### Submission
 
-Add a link to your code [Code]('https://github.com/jamesktruitt/vue-movie-app'), and your deployed site [Deploy]('https://truflix-movie-db.firebaseapp.com/').
+Add a link to your code [Code](https://github.com/jamesktruitt/vue-movie-app), and your deployed site [Deploy](https://truflix-movie-db.firebaseapp.com/).
